@@ -12,3 +12,11 @@ ro.sys.sdcardfs=false
 
 # ro.product.first_api_level indicates the first api level the device has commercially launched on.
 ro.product.first_api_level=23
+
+# HWC
+debug.hwc.force_gpu=0
+debug.hwc.max_hw_overlays=5
+debug.egl.hw=1
+debug.sf.enable_hwc_vds=1
+debug.sf.hw=1
+persist.sys.ui.hw=true
