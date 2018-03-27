@@ -27,6 +27,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_j7y17lte
 PRODUCT_DEVICE := j7y17lte
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-J730GM
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=samsung/j5y17ltexx/j5y17lte:8.1/NRD90M/J530FXXU2ARB2:user/release-keys
+    PRIVATE_BUILD_DESC="j5y17ltexx-user 8.1 NRD90M J530FXXU2ARB2 release-keys"

@@ -24,6 +24,9 @@ LOCAL_PATH := device/samsung/j7y17lte
 # inherit the splitted configs
 -include $(LOCAL_PATH)/board/*.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_sec
+
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/j7y17lte/sepolicy
 
