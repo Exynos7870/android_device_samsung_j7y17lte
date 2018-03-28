@@ -129,6 +129,7 @@ lib/libsecril-client.so
 # Sensors
 lib/hw/sensors.universal7870.so
 lib/libsensorlistener.so
+lib/libsensorservice.so
 
 # Shim Libs
 lib/libprotobuf-cpp-fooo.so|5890f0daae5933210aa6b114bafc52ee7e809864
