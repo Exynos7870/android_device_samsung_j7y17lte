@@ -1,20 +1,11 @@
 # Audio
-af.fast_track_multiplier=1
-audio_hal.force_voice_config=wide
 audio_hal.disable_two_mic=true
-
-# Bluetooth
-ro.bt.bdaddr_path="/efs/bluetooth/bt_addr"
-
-# Graphics
-ro.opengles.version=196610
 
 # Disable tripple bufferring to reduce lags
 ro.sf.disable_triple_buffer=0
 
 # DPI
 ro.sf.lcd_density=480
-lockscreen.rot_override=true
 
 # HWC
 debug.hwc.force_gpu=0
@@ -24,9 +15,6 @@ debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 persist.sys.ui.hw=true
 debug.hwui.use_buffer_age=false
-
-# Boot directly from charger mode
-ro.enable_boot_charger_mode=1
 
 # Radio
 persist.radio.sib16_support=0
@@ -39,15 +27,8 @@ ro.telephony.default_network=22
 ro.telephony.get_imsi_from_sim=true
 ro.ril.force_eri_from_xml=true
 
-# read DS/SS property
-import /efs/factory.prop
-
-#Treble
-persist.media.treble_omx=false
-
 # sdcardfs
 ro.sys.sdcardfs=false
 
 # Wifi
-wifi.interface=wlan0
 net.tethering.noprovisioning=true
