@@ -1,0 +1,2 @@
+allow system_server app_efs_file:file write;
+

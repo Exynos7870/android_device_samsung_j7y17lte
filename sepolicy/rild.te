@@ -1,0 +1,4 @@
+allow rild self:capability { dac_override fowner };
+
+allow rild self:capability fsetid;
+

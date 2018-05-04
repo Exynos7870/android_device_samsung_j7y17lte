@@ -1,8 +1,5 @@
 # NFC
 /dev/sec-nfc                 u:object_r:nfc_device:s0
 
-# Fingerprint
-/data/biometrics(/.*)?       u:object_r:fingerprintd_data_file:s0
-
 # TFA98xx amplifier
 #/dev/i2c-20                  u:object_r:amplifier_device:s0
