@@ -63,6 +63,9 @@ on boot
     chown system radio /sys/class/fingerprint/fingerprint/vendor
     chown system radio /sys/class/fingerprint/fingerprint/adm
 
+    chown system system /dev/esfp0
+    chmod 0660 /dev/esfp0
+
 # Permissions for Gyro_sensor
     chown system radio /sys/class/sensors/gyro_sensor/power_on
     chown system radio /sys/class/sensors/gyro_sensor/power_off
@@ -296,3 +299,24 @@ service sswap /sbin/sswap -s -f 1536
     user root
     group root
     oneshot
+
+# Permission for Mobicore
+    chown radio system /dev/mobicore-user
+    chown system system /dev/mobicore
+    chown system system /dev/s5p-smem
+
+    chmod 0666 /dev/mobicore-user
+    chmod 0700 /dev/mobicore
+    chmod 0660 /dev/s5p-smem
+
+on nonencrypted
+    mkdir /data/misc/mcRegistry 0775 system system
+
+on property:vold.decrypt=trigger_restart_framework
+    mkdir /data/misc/mcRegistry 0775 system system
+
+service mobicore /system/bin/mcDriverDaemon -r /system/app/FFFFFFFF000000000000000000000001.drbin -r /system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin -r /system/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
+    class core
+    user system
+    group system
+    disabled
