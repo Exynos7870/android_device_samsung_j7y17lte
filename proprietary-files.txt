@@ -122,8 +122,9 @@ vendor/lib/libMcRegistry.so:lib/libMcRegistry.so
 # Radio
 lib/libaudio-ril.so
 lib/libreference-ril.so
-lib/libsec-ril-dsds.so|baf6ac2e770b0456ad1ad3906c92a4deebd11040
 lib/libsec-ril.so|09f007ba0fd0a66b98ccd4c4b8275c703a6a6804
+lib/libsec-ril-dsds.so|baf6ac2e770b0456ad1ad3906c92a4deebd11040
+lib/librilutils.so
 lib/libsecnativefeature.so
 lib/libsecril-client.so
 
