@@ -2,6 +2,17 @@ on post-fs-data
 # sec_efs_file
     mkdir /efs/sec_efs 0775 radio system
 
+    # Mobicore
+    export MC_AUTH_TOKEN_PATH /efs
+    mkdir /efs/TEE  0770 radio system
+    chmod 0660 /dev/t-base-tui
+    chown system system /dev/t-base-tui
+    start mobicore
+
+on post-fs
+    # Mobicore
+    setprop sys.mobicoredaemon.enable stopped
+
 on boot
     mount debugfs /sys/kernel/debug /sys/kernel/debug
     chown system system /sys/kernel/debug
