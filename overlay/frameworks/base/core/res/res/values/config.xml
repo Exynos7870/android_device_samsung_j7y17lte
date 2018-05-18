@@ -70,6 +70,16 @@
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
+    <!-- Pickup Controls -->
+    <bool name="config_dozePulsePickup">true</bool>
+
+    <!-- Brightness Factor -->
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
+
+    <!-- Decouple Power Profile -->
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
