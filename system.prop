@@ -9,3 +9,6 @@ ro.sf.lcd_density=480
 
 # sdcardfs
 ro.sys.sdcardfs=false
+
+# ro.product.first_api_level indicates the first api level the device has commercially launched on.
+ro.product.first_api_level=23
