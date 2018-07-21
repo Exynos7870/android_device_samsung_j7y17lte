@@ -305,7 +305,7 @@ on boot
 # Permission for Mobicore
     chown radio system /dev/mobicore-user
     chown system system /dev/mobicore
-    chown system system /dev/s5p-smem
+    chown media system /dev/s5p-smem
 
     chmod 0666 /dev/mobicore-user
     chmod 0700 /dev/mobicore
