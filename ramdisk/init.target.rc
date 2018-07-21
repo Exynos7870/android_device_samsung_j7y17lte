@@ -287,7 +287,7 @@ on boot
 # Permissions for TouchScreen
     chown system radio /sys/class/sec/tsp/cmd
     chown system system /sys/class/sec/tsp/input/enabled
-
+    chown system system /sys/class/sec/tsp/dt2w_enable
     chmod 0660 /sys/class/sec/tsp/input/enabled
 
 # Permissions for Touchkey
