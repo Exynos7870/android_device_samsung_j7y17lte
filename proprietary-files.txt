@@ -25,6 +25,8 @@ lib/lib_SoundAlive_3DPosition_ver202.so
 lib/lib_SoundAlive_play_plus_ver127a.so
 lib/lib_SoundAlive_SRC384_ver300.so
 lib/lib_SoundBooster_ver800.so
+vendor/lib/libLifevibes_lvverx.so
+vendor/lib/libLifevibes_lvvetx.so
 
 # Bluetooth
 bin/prepare_param.sh
